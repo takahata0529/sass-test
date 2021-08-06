@@ -1,0 +1,125 @@
+.news {
+  margin-bottom: 200px;
+   -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.news .inner{
+   background-image: linear-gradient(45deg, blue 49%, gray 49%,gray 51%, blue 51%);
+   -webkit-box-shadow: 10px 10px 20px rgb(17, 16, 16);
+  box-shadow: 10px 10px 20px rgb(17, 16, 16);
+ 
+}
+
+.news .section_ttl {
+  margin-bottom: 80px;
+}
+
+h2{
+   -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  padding-left: 200px;
+}
+
+
+.news_list {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.news_item {
+  width: 30%;
+  height: auto;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+   -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.news_item:hover {
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 10px 10px 20px #ddd;
+  box-shadow: 10px 10px 20px #ddd;
+}
+
+.news_img {
+  display: contents;
+  width: 100%;
+}
+
+.news_img img {
+  width: 100%;
+}
+
+.news_txt {
+  padding: 0 16px;
+
+  background-color:white;
+  padding: 25px 0 5px 0;
+}
+
+.news_ttl {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.news_date {
+  font-size: 15px;
+  line-height: 1;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.news_date::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow.png) no-repeat;
+  background-size: contain;
+  width: 19%;
+  height: 55%;
+  display: block;
+  right: 13px;
+  top: 50%;
+}
+
+@media screen and (max-width: 480px){
+
+.news {
+   -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+h2{
+   -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  padding:0 80px 0 0;
+}
+
+
+  .news_list {
+  display: block;
+}
+
+.news_item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10%;
+  border: solid 1px #ccc;
+
+   -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+}
+}
